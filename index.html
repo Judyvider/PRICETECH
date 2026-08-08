@@ -24,8 +24,8 @@
   .logo span{color:var(--text);}
   .nav-links{display:flex;gap:1.5rem;font-size:0.9rem;color:var(--muted);}
   .nav-links a:hover{color:var(--gold);}
-  .nav-cta{background:var(--gold);color:#0D0D0D;padding:0.5rem 1.2rem;border-radius:6px;font-weight:500;font-size:0.9rem;transition:opacity 0.2s;}
-  .nav-cta:hover{opacity:0.85;}
+  .nav-cta{background:var(--gold);color:#0D0D0D;padding:0.6rem 1.4rem;border-radius:30px;font-weight:600;font-size:0.9rem;transition:transform 0.2s, box-shadow 0.2s; border: none; box-shadow: 4px 4px 10px rgba(0,0,0,0.4), inset -4px -4px 10px rgba(180,130,0,0.5), inset 4px 4px 10px rgba(255,255,255,0.8);}
+  .nav-cta:active{transform:scale(0.95);}
   
   .hero{padding:5rem 2rem 4rem;max-width:900px;margin:0 auto;text-align:center;}
   .hero-badge{display:inline-block;background:#1e1a0e;color:var(--gold);font-size:0.78rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;padding:0.35rem 1rem;border-radius:20px;border:1px solid #3a320a;margin-bottom:1.5rem;}
@@ -34,10 +34,11 @@
   .hero p{font-size:1.1rem;color:var(--muted);max-width:560px;margin:0 auto 2rem;}
   .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
   
-  .btn-primary{background:var(--gold);color:#0D0D0D;padding:0.75rem 1.8rem;border-radius:8px;font-weight:500;font-size:1rem;display:inline-flex;align-items:center;gap:0.5rem;transition:opacity 0.2s;}
-  .btn-primary:hover{opacity:0.88;}
-  .btn-outline{border:1px solid #333;color:var(--text);padding:0.75rem 1.8rem;border-radius:8px;font-size:1rem;display:inline-flex;align-items:center;gap:0.5rem;transition:background 0.2s;}
-  .btn-outline:hover{background:#1c1c1c;}
+  .btn-primary{background:var(--gold);color:#0D0D0D;padding:0.85rem 2rem;border-radius:30px;font-weight:600;font-size:1rem;display:inline-flex;align-items:center;gap:0.5rem;transition:transform 0.2s, box-shadow 0.2s; border: none; box-shadow: 4px 4px 10px rgba(0,0,0,0.4), inset -4px -4px 10px rgba(180,130,0,0.5), inset 4px 4px 10px rgba(255,255,255,0.8);}
+  .btn-primary:active{transform:scale(0.95);}
+  .btn-outline{background:#2a2a2a;color:var(--text);padding:0.85rem 2rem;border-radius:30px;font-weight:600;font-size:1rem;display:inline-flex;align-items:center;gap:0.5rem;transition:transform 0.2s, background 0.2s; border: none; box-shadow: 4px 4px 10px rgba(0,0,0,0.5), inset -4px -4px 10px rgba(0,0,0,0.8), inset 4px 4px 10px rgba(90,90,90,0.5);}
+  .btn-outline:active{transform:scale(0.95);}
+  .btn-outline:hover{background:#333;}
   .trust-strip{display:flex;gap:2rem;justify-content:center;margin-top:3rem;flex-wrap:wrap;}
   .trust-item{display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;color:var(--muted);}
   .trust-dot{width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;}
@@ -74,10 +75,11 @@
   .pricing-items li{font-size:0.85rem;color:var(--muted);padding:0.3rem 0;display:flex;align-items:flex-start;gap:0.5rem;line-height:1.5;}
   .pricing-items li::before{content:"✓";color:var(--gold);font-weight:700;flex-shrink:0;margin-top:1px;}
   
-  .pricing-btn{display:block;text-align:center;padding:0.65rem;border-radius:8px;font-size:0.9rem;font-weight:500;transition:opacity 0.2s;}
-  .pricing-btn.gold{background:var(--gold);color:#0D0D0D;}
-  .pricing-btn.outline{border:1px solid #333;color:var(--text);}
-  .pricing-btn:hover{opacity:0.85;}
+  .pricing-btn{display:block;text-align:center;padding:0.85rem;border-radius:30px;font-size:0.9rem;font-weight:600;transition:transform 0.2s, background 0.2s; border: none;}
+  .pricing-btn:active{transform:scale(0.95);}
+  .pricing-btn.gold{background:var(--gold);color:#0D0D0D; box-shadow: 4px 4px 10px rgba(0,0,0,0.4), inset -4px -4px 10px rgba(180,130,0,0.5), inset 4px 4px 10px rgba(255,255,255,0.8);}
+  .pricing-btn.outline{background:#2a2a2a;color:var(--text); box-shadow: 4px 4px 10px rgba(0,0,0,0.5), inset -4px -4px 10px rgba(0,0,0,0.8), inset 4px 4px 10px rgba(90,90,90,0.5);}
+  .pricing-btn.outline:hover{background:#333;}
   .pricing-note{text-align:center;font-size:0.82rem;color:var(--muted);margin-top:1.5rem;max-width:600px;margin-left:auto;margin-right:auto;}
   .testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;max-width:900px;margin:0 auto;}
   .testi-card{background:var(--card);border:1px solid #222;border-radius:var(--radius);padding:1.25rem;}
@@ -95,6 +97,15 @@
   footer .logo{font-size:1.2rem;display:block;margin-bottom:0.5rem;}
   .wa-icon{width:16px;height:16px;flex-shrink:0;}
 
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 1000px; margin: 0 auto; align-items: center; }
+  @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } }
+  .about-text h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 5vw, 3rem); letter-spacing: 1.5px; color: var(--gold); margin-bottom: 1rem; line-height: 1.1; }
+  .about-text p { color: var(--muted); margin-bottom: 1.2rem; font-size: 1.05rem; line-height: 1.7; }
+  .about-image-wrapper { position: relative; }
+  .about-image { width: 100%; border-radius: 14px; border: 1px solid #222; box-shadow: 0 10px 30px rgba(0,0,0,0.5); object-fit: cover; aspect-ratio: 4/3; }
+  .about-badge { position: absolute; bottom: -1.5rem; right: -1.5rem; background: var(--gold); color: #000; padding: 1.5rem; border-radius: 14px; font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; text-align: center; line-height: 1.1; box-shadow: 4px 4px 10px rgba(0,0,0,0.4), inset -4px -4px 10px rgba(180,130,0,0.5), inset 4px 4px 10px rgba(255,255,255,0.8); }
+  .about-badge span { display: block; font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 500; color: #222; margin-top: 0.2rem; }
+
   .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
   .product-card { background: var(--card); border: 1px solid #222; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s; }
   .product-card:hover { border-color: var(--gold); transform: translateY(-4px); }
@@ -105,10 +116,12 @@
   .product-desc ul { list-style: none; margin-left: 0; padding-left: 0; }
   .product-desc li { margin-bottom: 0.35rem; display: flex; align-items: flex-start; gap: 0.4rem; line-height: 1.4; }
   .product-desc li::before { content: "•"; color: var(--gold); }
-  .product-price { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--gold); margin-bottom: 1rem; }
   .product-btns { display: flex; gap: 0.5rem; }
-  .btn-action { background: var(--gold); color: #0D0D0D; padding: 0.75rem 0.5rem; border-radius: 25px; font-weight: 600; font-size: 0.85rem; border: none; cursor: pointer; text-align: center; flex: 1; transition: opacity 0.2s; }
-  .btn-action:hover { opacity: 0.85; }
+  .btn-action { background: var(--gold); color: #0D0D0D; padding: 0.85rem 0.5rem; border-radius: 30px; font-weight: 600; font-size: 0.85rem; border: none; cursor: pointer; text-align: center; flex: 1; transition: transform 0.2s; box-shadow: 4px 4px 10px rgba(0,0,0,0.4), inset -4px -4px 10px rgba(180,130,0,0.5), inset 4px 4px 10px rgba(255,255,255,0.8); }
+  .btn-action:active { transform: scale(0.95); }
+  .btn-action-dark { background: #2a2a2a; color: var(--text); padding: 0.85rem 0.5rem; border-radius: 30px; font-weight: 600; font-size: 0.85rem; border: none; cursor: pointer; text-align: center; flex: 1; transition: transform 0.2s, background 0.2s; box-shadow: 4px 4px 10px rgba(0,0,0,0.5), inset -4px -4px 10px rgba(0,0,0,0.8), inset 4px 4px 10px rgba(90,90,90,0.5); }
+  .btn-action-dark:hover { background: #333; }
+  .btn-action-dark:active { transform: scale(0.95); }
   
   .cart-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px); z-index: 999; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
   .cart-overlay.active { opacity: 1; pointer-events: all; }
@@ -130,21 +143,61 @@
   .cart-total span:last-child { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--gold); }
   
   .mpesa-checkout { display: flex; flex-direction: column; gap: 0.75rem; }
-  .mpesa-input { padding: 1rem; border-radius: 10px; border: 1px solid #333; background: #0D0D0D; color: var(--text); font-family: inherit; font-size: 1rem; }
-  .mpesa-input:focus { outline: none; border-color: #4CAF50; }
-  .btn-mpesa { background: #4CAF50; color: white; padding: 1rem; border-radius: 10px; border: none; font-weight: bold; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 0.5rem; transition: opacity 0.2s; font-size: 1rem; }
-  .btn-mpesa:hover { opacity: 0.9; }
+  .btn-mpesa { background: var(--gold); color: #0D0D0D; padding: 1rem; border-radius: 30px; border: none; font-weight: bold; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 0.5rem; transition: transform 0.2s; font-size: 1rem; box-shadow: 4px 4px 10px rgba(0,0,0,0.4), inset -4px -4px 10px rgba(180,130,0,0.5), inset 4px 4px 10px rgba(255,255,255,0.8); }
+  .btn-mpesa:active { transform: scale(0.95); }
   
   .cart-badge { background: #ff4444; color: white; border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; position: absolute; top: -6px; right: -8px; font-weight: bold; }
   .nav-cart-btn { position: relative; display: flex; align-items: center; justify-content: center; background: none; border: none; color: var(--text); cursor: pointer; margin-left: 0.5rem; transition: color 0.2s; }
   .nav-cart-btn:hover { color: var(--gold); }
+
+  /* --- NEW ANIMATIONS & DESIGN UPGRADES --- */
+  body { overflow-x: hidden; position: relative; }
+  
+  /* Ambient Background Glows */
+  .ambient-glow { position: absolute; width: 60vw; height: 60vw; max-width: 600px; max-height: 600px; background: radial-gradient(circle, rgba(245,197,24,0.12) 0%, transparent 70%); border-radius: 50%; filter: blur(80px); z-index: -1; pointer-events: none; }
+  .glow-1 { top: -100px; left: -200px; }
+  .glow-2 { top: 40%; right: -200px; background: radial-gradient(circle, rgba(245,197,24,0.08) 0%, transparent 70%); }
+  .glow-3 { bottom: 10%; left: -100px; background: radial-gradient(circle, rgba(245,197,24,0.08) 0%, transparent 70%); }
+
+  /* Smooth Scroll Reveals */
+  .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .reveal.active { opacity: 1; transform: translateY(0); }
+  .delay-1 { transition-delay: 0.1s; }
+  .delay-2 { transition-delay: 0.2s; }
+  .delay-3 { transition-delay: 0.3s; }
+
+  /* Enhanced Card Hovers */
+  .service-card:hover, .product-card:hover, .why-card:hover, .pricing-card:hover { box-shadow: 0 10px 30px rgba(245,197,24,0.15); }
+  .product-img { transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .product-card:hover .product-img { transform: scale(1.08); }
+
+  /* Animated Testimonial Marquee */
+  .marquee-container { width: 100%; max-width: 1000px; margin: 0 auto; overflow: hidden; position: relative; padding: 1rem 0; }
+  .marquee-container::before, .marquee-container::after { content: ""; position: absolute; top: 0; width: 80px; height: 100%; z-index: 2; pointer-events: none; }
+  .marquee-container::before { left: 0; background: linear-gradient(to right, var(--dark), transparent); }
+  .marquee-container::after { right: 0; background: linear-gradient(to left, var(--dark), transparent); }
+  .marquee-track { display: flex; gap: 1.5rem; width: max-content; animation: scroll 35s linear infinite; }
+  .marquee-track:hover { animation-play-state: paused; }
+  @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-50% - 0.75rem)); } }
+  .testi-card { width: 320px; flex-shrink: 0; }
+
+  /* Floating WhatsApp Button */
+  .floating-wa { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 999; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation: pulse 2s infinite; transition: transform 0.3s; text-decoration: none; }
+  .floating-wa:hover { transform: scale(1.1); animation: none; color: white; }
+  .floating-wa svg { width: 34px; height: 34px; fill: currentColor; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
 </style>
 </head>
 <body>
 
+<div class="ambient-glow glow-1"></div>
+<div class="ambient-glow glow-2"></div>
+<div class="ambient-glow glow-3"></div>
+
 <nav>
   <div class="logo">Price<span>tech</span></div>
   <div class="nav-links">
+    <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#products">Store</a>
     <a href="#pricing">Pricing</a>
@@ -160,7 +213,7 @@
   </div>
 </nav>
 
-<div class="hero">
+<div class="hero reveal">
   <div class="hero-badge">⚡ Nairobi's trusted electrical experts</div>
   <h1>Fast. Safe.<br/><span>Reliable.</span></h1>
   <p>Professional electrical wiring, shower installation, and electronics repair. Same-day service available across Nairobi.</p>
@@ -184,29 +237,49 @@
 
 <div class="divider"></div>
 
+<section id="about">
+  <div class="about-grid">
+    <div class="about-image-wrapper reveal">
+      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" alt="Electrician at work" class="about-image" onerror="this.src='https://placehold.co/600x450/1A1A1A/F5C518?text=Our+Work'">
+      <div class="about-badge">
+        2+ YEARS
+        <span>Trusted Experience</span>
+      </div>
+    </div>
+    <div class="about-text reveal delay-1">
+      <div class="section-label" style="margin-bottom: 0.5rem;">Who We Are</div>
+      <h2>Raising the Standard of Electrical Services in Nairobi</h2>
+      <p>At Pricetech Solutions, we noticed a gap in the market: finding a reliable, transparent, and highly skilled technician on short notice was nearly impossible. We started with a simple mission — to provide Nairobi residents with safe, top-tier electrical and water heater solutions without the hidden fees.</p>
+      <p>Whether you need a quick instant shower installation, a complex full-house wiring job, or emergency fault finding, our experienced team ensures the job is done right the very first time. We treat your home with respect and prioritize your safety above all else.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section id="services">
-  <div class="section-header">
+  <div class="section-header reveal">
     <div class="section-label">What we do</div>
     <div class="section-title">Our services</div>
     <p class="section-sub">We handle all things electrical — from full installations to quick repairs — so you don't have to.</p>
   </div>
   <div class="services-grid">
-    <div class="service-card">
+    <div class="service-card reveal">
       <span class="service-icon">⚡</span>
       <h3>Electrical installations</h3>
       <p>Full wiring, socket installations, distribution boards, and safe connections for homes and offices.</p>
     </div>
-    <div class="service-card">
+    <div class="service-card reveal delay-1">
       <span class="service-icon">🚿</span>
       <h3>Shower installation &amp; repair</h3>
       <p>Modern instant shower fitting, repairs, and replacements. Hot water issues? We fix them fast.</p>
     </div>
-    <div class="service-card">
+    <div class="service-card reveal delay-2">
       <span class="service-icon">📺</span>
       <h3>Electronics repair</h3>
       <p>TVs, home appliances, fans, and more. We diagnose and fix with precision and care.</p>
     </div>
-    <div class="service-card">
+    <div class="service-card reveal delay-3">
       <span class="service-icon">🔧</span>
       <h3>Maintenance services</h3>
       <p>Regular checkups, fault detection, and preventive maintenance to keep your systems running safely.</p>
@@ -217,16 +290,16 @@
 <div class="divider"></div>
 
 <section id="products">
-  <div class="section-header">
+  <div class="section-header reveal">
     <div class="section-label">Our Store</div>
     <div class="section-title">Latest Products</div>
-    <p class="section-sub">Browse our high-quality water heaters and showers. Purchase directly through M-Pesa with guaranteed delivery and installation in Nairobi.</p>
+    <p class="section-sub">Browse our high-quality water heaters and showers. Request a direct quotation via WhatsApp.</p>
   </div>
   <div class="products-grid">
     
     <!-- Product 1 -->
-    <div class="product-card">
-      <img class="product-img" src="Rain Shower Heads with Handheld_ Elevate Your Bathroom Experience.jpg" alt="Premium Rain Shower System" onerror="this.src='https://placehold.co/400x300/1A1A1A/F5C518?text=Premium+Rain+Shower'">
+    <div class="product-card reveal">
+      <img class="product-img" src="Rain Shower Heads with Handheld_ Elevate Your Bathroom Experience.jpg" alt="Premium Black Rain Shower System" onerror="this.src='https://placehold.co/400x300/1A1A1A/F5C518?text=Premium+Rain+Shower'">
       <div class="product-info">
         <h3 class="product-title">Premium Black Rain Shower System</h3>
         <div class="product-desc">
@@ -237,17 +310,16 @@
             <li>Free installation in Nairobi</li>
           </ul>
         </div>
-        <div class="product-price">28,500/-</div>
         <div class="product-btns">
-          <button class="btn-action" onclick="addToCart('p1', 'Premium Rain Shower System', 28500, 'Rain Shower Heads with Handheld_ Elevate Your Bathroom Experience.jpg')">Add to Cart</button>
-          <button class="btn-action" onclick="buyNow('p1', 'Premium Rain Shower System', 28500, 'Rain Shower Heads with Handheld_ Elevate Your Bathroom Experience.jpg')">Proceed to Buy</button>
+          <button class="btn-action" onclick="addToCart('p1', 'Premium Rain Shower System', 'Rain Shower Heads with Handheld_ Elevate Your Bathroom Experience.jpg')">Add to Cart</button>
+          <button class="btn-action-dark" onclick="requestSingleQuote('Premium Rain Shower System')">Get Quotation</button>
         </div>
       </div>
     </div>
 
     <!-- Product 2 -->
-    <div class="product-card">
-      <img class="product-img" src="Colonne de Douche Encastrée avec Mitigeur pour Douche Réglable en Hauteur Colonne de Douche avec Haute Pression Pommeau de Douche et Douche à Pluie 3 modes.jpg" alt="Concealed Shower Mixer" onerror="this.src='https://placehold.co/400x300/1A1A1A/F5C518?text=Concealed+Mixer'">
+    <div class="product-card reveal delay-1">
+      <img class="product-img" src="Colonne de Douche Encastrée avec Mitigeur pour Douche Réglable en Hauteur Colonne de Douche avec Haute Pression Pommeau de Douche et Douche à Pluie 3 modes.jpg" alt="Modern Concealed Shower Mixer Set" onerror="this.src='https://placehold.co/400x300/1A1A1A/F5C518?text=Concealed+Mixer'">
       <div class="product-info">
         <h3 class="product-title">Modern Concealed Shower Mixer Set</h3>
         <div class="product-desc">
@@ -258,17 +330,16 @@
             <li>High-pressure design</li>
           </ul>
         </div>
-        <div class="product-price">32,000/-</div>
         <div class="product-btns">
-          <button class="btn-action" onclick="addToCart('p2', 'Modern Concealed Shower Set', 32000, 'Colonne de Douche Encastrée avec Mitigeur pour Douche Réglable en Hauteur Colonne de Douche avec Haute Pression Pommeau de Douche et Douche à Pluie 3 modes.jpg')">Add to Cart</button>
-          <button class="btn-action" onclick="buyNow('p2', 'Modern Concealed Shower Set', 32000, 'Colonne de Douche Encastrée avec Mitigeur pour Douche Réglable en Hauteur Colonne de Douche avec Haute Pression Pommeau de Douche et Douche à Pluie 3 modes.jpg')">Proceed to Buy</button>
+          <button class="btn-action" onclick="addToCart('p2', 'Modern Concealed Shower Set', 'Colonne de Douche Encastrée avec Mitigeur pour Douche Réglable en Hauteur Colonne de Douche avec Haute Pression Pommeau de Douche et Douche à Pluie 3 modes.jpg')">Add to Cart</button>
+          <button class="btn-action-dark" onclick="requestSingleQuote('Modern Concealed Shower Set')">Get Quotation</button>
         </div>
       </div>
     </div>
 
     <!-- Product 3 -->
-    <div class="product-card">
-      <img class="product-img" src="Shower smarter with Grohe Tempesta Cube 250! 🌍💦.jpg" alt="Grohe Tempesta Cube" onerror="this.src='https://placehold.co/400x300/1A1A1A/F5C518?text=Tempesta+Cube'">
+    <div class="product-card reveal delay-2">
+      <img class="product-img" src="Shower smarter with Grohe Tempesta Cube 250! 🌍💦.jpg" alt="Tempesta Cube 250 Thermostatic System" onerror="this.src='https://placehold.co/400x300/1A1A1A/F5C518?text=Tempesta+Cube'">
       <div class="product-info">
         <h3 class="product-title">Tempesta Cube 250 Thermostatic System</h3>
         <div class="product-desc">
@@ -279,10 +350,9 @@
             <li>Premium build quality</li>
           </ul>
         </div>
-        <div class="product-price">45,999/-</div>
         <div class="product-btns">
-          <button class="btn-action" onclick="addToCart('p3', 'Tempesta Cube 250 System', 45999, 'Shower smarter with Grohe Tempesta Cube 250! 🌍💦.jpg')">Add to Cart</button>
-          <button class="btn-action" onclick="buyNow('p3', 'Tempesta Cube 250 System', 45999, 'Shower smarter with Grohe Tempesta Cube 250! 🌍💦.jpg')">Proceed to Buy</button>
+          <button class="btn-action" onclick="addToCart('p3', 'Tempesta Cube 250 System', 'Shower smarter with Grohe Tempesta Cube 250! 🌍💦.jpg')">Add to Cart</button>
+          <button class="btn-action-dark" onclick="requestSingleQuote('Tempesta Cube 250 System')">Get Quotation</button>
         </div>
       </div>
     </div>
@@ -293,13 +363,13 @@
 <div class="divider"></div>
 
 <section id="pricing">
-  <div class="section-header">
+  <div class="section-header reveal">
     <div class="section-label">Transparent pricing</div>
     <div class="section-title">Simple, fair rates</div>
     <p class="section-sub">No hidden charges, no surprises. You know what you're paying before we start. All prices in KES.</p>
   </div>
   <div class="pricing-grid">
-    <div class="pricing-card">
+    <div class="pricing-card reveal">
       <div class="pricing-name">Basic Fix</div>
       <div class="pricing-desc">Quick single-item repairs and minor jobs</div>
       <div class="pricing-price">500 <span>– 1,500 KES</span></div>
@@ -313,7 +383,7 @@
       </ul>
       <a class="pricing-btn outline" href="https://wa.me/254768695004?text=Hello%20Pricetech%2C%20I%20need%20a%20Basic%20Fix%20service">Book on WhatsApp</a>
     </div>
-    <div class="pricing-card featured">
+    <div class="pricing-card featured reveal delay-1">
       <div class="pricing-badge">Most Popular</div>
       <div class="pricing-name">Shower Service</div>
       <div class="pricing-desc">Complete instant shower solutions</div>
@@ -329,7 +399,7 @@
       </ul>
       <a class="pricing-btn gold" href="https://wa.me/254768695004?text=Hello%20Pricetech%2C%20I%20need%20a%20Shower%20Service">Book on WhatsApp</a>
     </div>
-    <div class="pricing-card">
+    <div class="pricing-card reveal delay-2">
       <div class="pricing-name">Full Wiring</div>
       <div class="pricing-desc">Complete electrical installation projects</div>
       <div class="pricing-price">8,000 <span>+ KES</span></div>
@@ -344,7 +414,7 @@
       </ul>
       <a class="pricing-btn outline" href="https://wa.me/254768695004?text=Hello%20Pricetech%2C%20I%20need%20a%20Full%20Wiring%20quote">Get a Quote</a>
     </div>
-    <div class="pricing-card">
+    <div class="pricing-card reveal delay-3">
       <div class="pricing-name">Electronics Repair</div>
       <div class="pricing-desc">Diagnosis and repair of appliances</div>
       <div class="pricing-price">500 <span>– 3,000 KES</span></div>
@@ -359,31 +429,31 @@
       <a class="pricing-btn outline" href="https://wa.me/254768695004?text=Hello%20Pricetech%2C%20I%20need%20Electronics%20Repair">Book on WhatsApp</a>
     </div>
   </div>
-  <p class="pricing-note">💡 Prices are estimates. Final cost depends on job complexity and parts required. We always confirm pricing before starting work — no surprises.</p>
+  <p class="pricing-note reveal">💡 Prices are estimates. Final cost depends on job complexity and parts required. We always confirm pricing before starting work — no surprises.</p>
 </section>
 
 <div class="divider"></div>
 
 <section id="why">
-  <div class="section-header">
+  <div class="section-header reveal">
     <div class="section-label">Why choose us</div>
     <div class="section-title">Built on trust</div>
     <p class="section-sub">We're not just technicians. We're a team that shows up, gets the job done right, and leaves you with peace of mind.</p>
   </div>
   <div class="why-grid">
-    <div class="why-card">
+    <div class="why-card reveal">
       <div class="why-num">2+</div>
       <p>Years of hands-on electrical experience across Nairobi</p>
     </div>
-    <div class="why-card">
+    <div class="why-card reveal delay-1">
       <div class="why-num">24h</div>
       <p>Fast response — same-day service for urgent issues</p>
     </div>
-    <div class="why-card">
+    <div class="why-card reveal delay-2">
       <div class="why-num">100%</div>
       <p>Transparent pricing — no hidden charges, ever</p>
     </div>
-    <div class="why-card">
+    <div class="why-card reveal delay-3">
       <div class="why-num">✓</div>
       <p>Quality workmanship guaranteed on every job</p>
     </div>
@@ -393,34 +463,62 @@
 <div class="divider"></div>
 
 <section id="testimonials">
-  <div class="section-header">
+  <div class="section-header reveal">
     <div class="section-label">Reviews</div>
     <div class="section-title">What our clients say</div>
   </div>
-  <div class="testi-grid">
-    <div class="testi-card">
-      <div class="stars">★★★★★</div>
-      <p>"Fixed my instant shower within an hour of calling. Professional, clean work and fair price. Highly recommend!"</p>
-      <div class="testi-author">Grace M.</div>
-      <div class="testi-loc">South B, Nairobi</div>
-    </div>
-    <div class="testi-card">
-      <div class="stars">★★★★★</div>
-      <p>"Rewired my entire apartment and installed new sockets. No mess left behind and the job was done the same day."</p>
-      <div class="testi-author">James K.</div>
-      <div class="testi-loc">Westlands, Nairobi</div>
-    </div>
-    <div class="testi-card">
-      <div class="stars">★★★★★</div>
-      <p>"My TV was dead for weeks. They repaired it at a price I didn't expect. Super honest guys — will definitely call again."</p>
-      <div class="testi-author">Faith W.</div>
-      <div class="testi-loc">Kasarani, Nairobi</div>
-    </div>
-    <div class="testi-card">
-      <div class="stars">★★★★★</div>
-      <p>"Needed emergency wiring after a power surge. They came within 2 hours. Fast, reliable, and professional. 10/10."</p>
-      <div class="testi-author">David O.</div>
-      <div class="testi-loc">Kilimani, Nairobi</div>
+  <div class="marquee-container reveal">
+    <div class="marquee-track">
+      <!-- Original Cards -->
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Fixed my instant shower within an hour of calling. Professional, clean work and fair price. Highly recommend!"</p>
+        <div class="testi-author">Grace M.</div>
+        <div class="testi-loc">South B, Nairobi</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Rewired my entire apartment and installed new sockets. No mess left behind and the job was done the same day."</p>
+        <div class="testi-author">James K.</div>
+        <div class="testi-loc">Westlands, Nairobi</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"My TV was dead for weeks. They repaired it at a price I didn't expect. Super honest guys — will definitely call again."</p>
+        <div class="testi-author">Faith W.</div>
+        <div class="testi-loc">Kasarani, Nairobi</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Needed emergency wiring after a power surge. They came within 2 hours. Fast, reliable, and professional. 10/10."</p>
+        <div class="testi-author">David O.</div>
+        <div class="testi-loc">Kilimani, Nairobi</div>
+      </div>
+      <!-- Duplicated for Infinite Loop -->
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Fixed my instant shower within an hour of calling. Professional, clean work and fair price. Highly recommend!"</p>
+        <div class="testi-author">Grace M.</div>
+        <div class="testi-loc">South B, Nairobi</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Rewired my entire apartment and installed new sockets. No mess left behind and the job was done the same day."</p>
+        <div class="testi-author">James K.</div>
+        <div class="testi-loc">Westlands, Nairobi</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"My TV was dead for weeks. They repaired it at a price I didn't expect. Super honest guys — will definitely call again."</p>
+        <div class="testi-author">Faith W.</div>
+        <div class="testi-loc">Kasarani, Nairobi</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Needed emergency wiring after a power surge. They came within 2 hours. Fast, reliable, and professional. 10/10."</p>
+        <div class="testi-author">David O.</div>
+        <div class="testi-loc">Kilimani, Nairobi</div>
+      </div>
     </div>
   </div>
 </section>
@@ -428,7 +526,7 @@
 <div class="divider"></div>
 
 <section>
-  <div class="cta-box">
+  <div class="cta-box reveal">
     <h2>Need electrical help today?</h2>
     <p>Whether it's a faulty shower, wiring issue, or emergency repair — Pricetech Solutions is ready. We respond fast and get the job done right the first time.</p>
     <div class="cta-btns">
@@ -448,6 +546,11 @@
   <p style="margin-top:0.5rem;">© 2026 Pricetech Solutions. All rights reserved.</p>
 </footer>
 
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/254768695004?text=Hello%20Pricetech%20Solutions%2C%20I%20need%20your%20services" class="floating-wa" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
 <!-- Cart Overlay & Sidebar -->
 <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
 <div class="cart-sidebar" id="cart-sidebar">
@@ -461,13 +564,12 @@
   <div class="cart-footer">
     <div class="cart-total">
       <span>Total:</span>
-      <span id="cart-total-price">KES 0</span>
+      <span style="font-size: 1.2rem; font-family: 'DM Sans', sans-serif;">Custom Quote</span>
     </div>
     <div class="mpesa-checkout">
-      <input type="text" id="mpesa-phone" class="mpesa-input" placeholder="M-Pesa Phone Number (e.g. 07XX...)" />
-      <button class="btn-mpesa" onclick="processMpesa()">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        Pay with M-Pesa
+      <button class="btn-mpesa" onclick="requestCartQuote()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Get Quotation on WhatsApp
       </button>
     </div>
   </div>
@@ -476,26 +578,30 @@
 <script>
   let cart = [];
 
-  function addToCart(id, name, price, img) {
+  function addToCart(id, name, img) {
     const existing = cart.find(item => item.id === id);
     if(existing) {
       existing.qty += 1;
     } else {
-      cart.push({id, name, price, img, qty: 1});
+      cart.push({id, name, img, qty: 1});
     }
     updateCartUI();
     customAlert(name + " added to cart.");
   }
 
-  function buyNow(id, name, price, img) {
-    const existing = cart.find(item => item.id === id);
-    if(!existing) {
-      cart.push({id, name, price, img, qty: 1});
+  function requestSingleQuote(name) {
+    const msg = encodeURIComponent("Hello Pricetech Solutions, I would like to get a quotation for the " + name + ".");
+    window.location.href = "https://wa.me/254768695004?text=" + msg;
+  }
+
+  function requestCartQuote() {
+    if(cart.length === 0) {
+      customAlert("Your cart is empty! Please add items first.");
+      return;
     }
-    updateCartUI();
-    if(!document.getElementById('cart-sidebar').classList.contains('active')) {
-      toggleCart();
-    }
+    const itemsList = cart.map(item => `${item.qty}x ${item.name}`).join(", ");
+    const msg = encodeURIComponent("Hello Pricetech Solutions, I would like to get a quotation for the following items: " + itemsList);
+    window.location.href = "https://wa.me/254768695004?text=" + msg;
   }
 
   function removeFromCart(id) {
@@ -506,17 +612,14 @@
   function updateCartUI() {
     const container = document.getElementById('cart-items-container');
     const countEl = document.getElementById('cart-count');
-    const totalEl = document.getElementById('cart-total-price');
     
     container.innerHTML = '';
-    let total = 0;
     let count = 0;
     
     if(cart.length === 0) {
       container.innerHTML = '<p style="color:var(--muted);text-align:center;margin-top:2rem;">Your cart is empty.</p>';
     } else {
       cart.forEach(item => {
-        total += item.price * item.qty;
         count += item.qty;
         container.innerHTML += `
           <div class="cart-item">
@@ -524,7 +627,6 @@
             <div class="cart-item-info">
               <div class="cart-item-title">${item.name}</div>
               <div style="font-size: 0.8rem; color: var(--muted);">Qty: ${item.qty}</div>
-              <div class="cart-item-price">${item.price.toLocaleString()}/-</div>
               <button class="remove-item" onclick="removeFromCart('${item.id}')">Remove</button>
             </div>
           </div>
@@ -533,7 +635,6 @@
     }
     
     countEl.innerText = count;
-    totalEl.innerText = `KES ${total.toLocaleString()}`;
   }
 
   function toggleCart() {
@@ -541,28 +642,6 @@
     document.getElementById('cart-overlay').classList.toggle('active');
   }
 
-  function processMpesa() {
-    const phone = document.getElementById('mpesa-phone').value;
-    if(cart.length === 0) {
-      customAlert("Your cart is empty! Please add items first.");
-      return;
-    }
-    if(!phone || phone.length < 9) {
-      customAlert("Please enter a valid M-Pesa phone number.");
-      return;
-    }
-    
-    customAlert("M-Pesa payment prompt sent to " + phone + ". Please check your phone to complete the transaction.");
-    
-    // Simulate successful checkout clearance
-    setTimeout(() => {
-      cart = [];
-      updateCartUI();
-      document.getElementById('mpesa-phone').value = '';
-      toggleCart();
-    }, 4000);
-  }
-  
   function customAlert(msg) {
      const existingBox = document.getElementById('custom-alert-box');
      if(existingBox) existingBox.remove();
@@ -588,6 +667,88 @@
   
   // Initial UI update
   updateCartUI();
+
+  // 1. Generate Manifest
+  const manifestJSON = {
+    "name": "Pricetech Solutions",
+    "short_name": "Pricetech",
+    "description": "Fast, Safe & Reliable Electrical Services in Nairobi",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0D0D0D",
+    "theme_color": "#F5C518",
+    "icons": [
+      {
+        "src": "https://placehold.co/192x192/F5C518/000000?text=PT",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "https://placehold.co/512x512/F5C518/000000?text=PT",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  };
+  
+  const manifestBlob = new Blob([JSON.stringify(manifestJSON)], { type: 'application/json' });
+  const manifestURL = URL.createObjectURL(manifestBlob);
+  const manifestLink = document.createElement('link');
+  manifestLink.rel = 'manifest';
+  manifestLink.href = manifestURL;
+  document.head.appendChild(manifestLink);
+
+  // 2. Generate and Register Service Worker for offline caching
+  const swCode = `
+    const CACHE_NAME = 'pricetech-cache-v1';
+    
+    self.addEventListener('install', (event) => {
+      event.waitUntil(
+        caches.open(CACHE_NAME).then((cache) => {
+          return cache.addAll(['/']);
+        })
+      );
+    });
+
+    self.addEventListener('fetch', (event) => {
+      event.respondWith(
+        caches.match(event.request).then((response) => {
+          return response || fetch(event.request);
+        }).catch(() => {
+          return new Response('Offline Content Unavailable');
+        })
+      );
+    });
+  `;
+  
+  const swBlob = new Blob([swCode], { type: 'application/javascript' });
+  const swURL = URL.createObjectURL(swBlob);
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register(swURL).then((registration) => {
+        console.log('PWA Service Worker registered successfully.');
+      }).catch((error) => {
+        console.log('Service Worker registration failed:', error);
+      });
+    });
+  }
+
+  // 3. Setup Intersection Observer for Scroll Reveals
+  document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          // Optional: Stop observing once revealed
+          // observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    reveals.forEach((el) => observer.observe(el));
+  });
 </script>
 </body>
 </html>
